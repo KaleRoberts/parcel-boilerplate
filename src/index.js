@@ -1,7 +1,6 @@
-import 'babel-core/polyfill';
+import 'babel-polyfill';
 
 import React from 'react';
-import Redux from 'redux';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import ItemThreadList from './containers/ItemThreadList';
