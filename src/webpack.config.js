@@ -5,12 +5,15 @@ module.exports = {
   devtool: 'cheap-module-eval-source-map',
   entry: [
     'webpack-hot-middleware/client',
-    './index'
+    './src/index' // Had an issue with webpack finding this file, was ./index before changing it
   ],
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: '/static/'
+  },
+  stats: {
+    errorDetails: true
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
@@ -21,7 +24,9 @@ module.exports = {
     loaders: [{
       test: /\.js$/,
       loaders: ['babel'],
-      exclude: /node_modules/,
+      exclude: [
+        path.resolve(__dirname, "node_modules")
+      ],
       include: __dirname
     },{
       test: /\.css$/,
@@ -29,6 +34,9 @@ module.exports = {
     },{
       test: /\.gif$/,
       loader: 'url?limit=10000&minetype=image/gif'
-    }]
+    }],
+    resolve: {
+      extensions: ['', '.js', '.jsx']
+    }
   }
 };

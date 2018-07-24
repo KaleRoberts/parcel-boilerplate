@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route } from 'react-router';
-import ItemThreadList from 'containers/ItemThreadList';
+import ItemThreadList from './containers/ItemThreadList';
 
 export default (
   <Route path="/" component={ItemThreadList}>

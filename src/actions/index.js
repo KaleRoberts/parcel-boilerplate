@@ -4,7 +4,7 @@ export { SET_DATA } from './types';
 import { MAX_THREAD_NUMBER, BASE_API_URL } from '../constants';
 import { storiesRef, getItems, getCommentItems, updatesRef } from '../services/api.firebase';
 
-/** *******************************************************
+/*********************************************************
  * Util function
  *
  * getApiUrlByItemType
@@ -26,7 +26,7 @@ function getApiUrlByItemType(type) {
       return 'topstories';
   }
 }
-/** *******************************************************
+/*********************************************************
  * Action definition
  *
  * requestItemThreads
@@ -80,7 +80,7 @@ function fetchItemThreads(state) {
       });
   };
 }
-/** *******************************************************
+/*********************************************************
  * Some checking functions before fetching
  *
  * shouldFetchItemThreads

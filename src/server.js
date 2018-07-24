@@ -1,3 +1,4 @@
+/* eslint-disable no-console */
 let webpack = require('webpack');
 let webpackDevMiddleware = require('webpack-dev-middleware');
 let webpackHotMiddleware = require('webpack-hot-middleware');
@@ -10,6 +11,7 @@ let compiler = webpack(config);
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
 app.use(webpackHotMiddleware(compiler));
 app.use(function(req, res) {
+  console.log(__dirname);
   res.sendFile(__dirname + '/index.html');
 });
 
