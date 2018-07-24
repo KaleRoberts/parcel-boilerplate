@@ -5,7 +5,7 @@ let webpackHotMiddleware = require('webpack-hot-middleware');
 let config = require('./webpack.config');
 
 let app = new require('express')();
-let port = 3000;
+let port = 8080;
 
 let compiler = webpack(config);
 app.use(webpackDevMiddleware(compiler, { noInfo: true, publicPath: config.output.publicPath }));
