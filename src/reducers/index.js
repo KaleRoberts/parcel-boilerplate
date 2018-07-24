@@ -8,12 +8,12 @@ const initialState = {
   ids: new Map()
 };
 
-function assign (previousState, modified = {}) {
+function assign(previousState, modified = {}) {
   return Object.assign({}, previousState, modified);
 }
 
-function threadReducer (state = initialState, action) {
-  let ids = new Map(state.ids); // clone a new one instead of mutating
+function threadReducer(state = initialState, action) {
+  const ids = new Map(state.ids); // clone a new one instead of mutating
   switch (action.type) {
     case REQUEST_ITEMTHREADS: {
       return assign(state, { ids, isLoading: true })
