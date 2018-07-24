@@ -12,7 +12,6 @@
   "rules": {
     "comma-dangle": 2,
     "no-cond-assign": 2,
-    "no-console": 2,
     "no-debugger": 2,
     "no-dupe-args": 2,
     "no-dupe-keys": 2,
@@ -53,7 +52,6 @@
     "arrow-spacing": [2,{"before":true,"after":true}],
     "constructor-super": 2,
     "no-var": 2,
-    "prefer-const": 2,
     "max-len": [2,120,{"ignoreComments":false,"ignoreUrls":true}],
     "max-params": [2,3]
   }
