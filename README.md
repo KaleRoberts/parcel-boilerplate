@@ -1,10 +1,23 @@
-## Description
+Redux-Hacker-News
+===
 
-This is a boilerplate project for quickly setting up a react/redux app using [parcel-bundler](https://github.com/parcel-bundler/parcel)
+Based on the async example in [rackt/redux](https://github.com/rackt/redux/tree/master/examples/async) and the Visual React tutorial [mking/react-hn](https://github.com/mking/react-hn).
+A Redux-powered Hacker News page built by using its [Firebase API](https://github.com/HackerNews/API).
+
+
+Get Started
+---
+Install packages first, then start the dev server:
+```bash
+$yarn install
+$yarn start
+```
+Access localhost:3000 and the Front Page of Hacker News should load up
+
 
 ## Usage
 
-1. `yarn start` starts parcel and runs dev server on :1234
+1. `yarn start` starts server.js and runs dev server on :3000
 1. `yarn tdd` starts jest in watch mode
 1. `yarn test` starts jest in single run mode
 1. `yarn lint` runs eslint against all /jsx?/ files

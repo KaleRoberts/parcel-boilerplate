@@ -24,6 +24,8 @@
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-polyfill": "^6.26.0",
     "babel-preset-react": "^6.24.1",
+    "eslint": "^4.17.0",
+    "eslint-plugin-react": "^7.10.0",
     "firebase": "^2.3.2",
     "history": "^1.9.0",
     "humps": "^0.6.0",
