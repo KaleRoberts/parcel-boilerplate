@@ -1,6 +1,6 @@
 {
-  "name": "parcel-boilerplate",
-  "version": "1.0.0",
+  "name": "react-hn",
+  "version": "0.1.0",
   "description": "",
   "main": "src/index.jsx",
   "scripts": {
@@ -9,6 +9,13 @@
     "test": "./node_modules/.bin/jest",
     "tdd": "./node_modules/.bin/jest --watchAll",
     "start": "./node_modules/.bin/parcel ./src/index.html"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "reactify"
+      ]
+    ]
   },
   "keywords": [],
   "author": "",
@@ -38,14 +45,21 @@
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
+    "browserify": "^16.2.2",
     "eslint": "^4.17.0",
+    "http-server": "^0.11.1",
+    "jquery": "^3.3.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.22.2",
     "parcel-bundler": "^1.6.2",
     "prop-types": "^15.6.0",
-    "react": "^16.2.0",
+    "react": "^16.4.1",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
-    "redux": "^3.7.2"
+    "reactify": "^1.1.1",
+    "redux": "^3.7.2",
+    "watchify": "^3.11.0"
   },
   "devDependencies": {
     "babel-jest": "^22.2.2",
