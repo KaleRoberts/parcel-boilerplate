@@ -3,6 +3,7 @@ Redux-Hacker-News
 
 Based on the Visual React tutorial [mking/react-hn](https://github.com/mking/react-hn) and heavily relied upon by tngan's redux-hacker-news [tngan/redux-hacker-news](https://github.com/tngan/redux-hacker-news).
 A Redux-powered Hacker News page built by using its [Firebase API](https://github.com/HackerNews/API).
+Boilerplate taken from use of Brandon Jernigan's (whatisboom/parcel-boilerplate)
 
 
 Get Started
